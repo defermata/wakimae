@@ -19,7 +19,7 @@ export default function Home() {
 					src="/kanae.webp"
 					alt="Kanae"
 					width={1440}
-					height={1011}
+					height={669}
 					loading="eager"
 					style={{ width: "95%", height: "auto" }}
 					className="border-2 border-foreground"
