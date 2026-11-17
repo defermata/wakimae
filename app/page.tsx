@@ -3,7 +3,11 @@ import Link from "next/link";
 
 const services = [
 	{ slug: "3d-design", label: "3D Design", color: "#e8d9c0" },
-	{ slug: "electronic-repair", label: "Electronic Repair", color: "#d9e2c8" },
+	{
+		slug: "electrical-electronic",
+		label: "Electrical & Electronic",
+		color: "#d9e2c8",
+	},
 	{ slug: "programming", label: "Programming", color: "#d6dbe8" },
 ];
 
@@ -25,7 +29,8 @@ export default function Home() {
 			<div className="text-center">
 				<h1 className="text-2xl font-semibold">
 					Need Something From{" "}
-					<span className="text-accent">Wakimae</span> ?
+					<span className="text-accent">Wakimae</span>
+					{"?"}
 				</h1>
 			</div>
 
@@ -42,10 +47,41 @@ export default function Home() {
 			</div>
 
 			<div className="text-center text-sm">
-				<span className="text-warning">*</span>for contact details, read{" "}
+				<span className="text-warning">*</span>for contact details, see{" "}
 				<Link href="/profile" className="text-accent hover:underline">
 					/profile
 				</Link>
+			</div>
+
+			<div>
+				<h2 className="text-xl font-semibold">
+					What does <span className="text-accent">Wakimae</span> do?
+				</h2>
+				<p className="mt-2">
+					I openly accept custom requests. For day-to-day work, I
+					handle low-voltage electrical and electronic devices,
+					ranging from phones and computers all the way to working on
+					microcontrollers like Arduino, ESP32, and the Raspberry Pi
+					Pico series.
+				</p>
+				<p className="mt-4">
+					In my spare time, I do a bit of coding, mainly in Rust and
+					C. But don't worry, if you need me to build you a website,
+					or just want to consult on a technical problem you're
+					dealing with in a different programming language, just hit
+					me up.
+				</p>
+				<p className="mt-4">
+					Recently I've taken an interest in CAD, so I do have some 3D
+					models, mostly functional parts. Feel free to visit{" "}
+					<Link
+						href="/design"
+						className="text-accent hover:underline"
+					>
+						/design
+					</Link>
+					{"."}
+				</p>
 			</div>
 		</div>
 	);
