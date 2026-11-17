@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
 	{ slug: "3d-design", label: "3D Design", color: "#e8d9c0" },
@@ -16,7 +17,6 @@ export default function Home() {
 					width={1440}
 					height={1011}
 					loading="eager"
-					fetchPriority="high"
 					style={{ width: "95%", height: "auto" }}
 					className="border-2 border-foreground"
 				/>
@@ -39,6 +39,13 @@ export default function Home() {
 						{service.label}
 					</div>
 				))}
+			</div>
+
+			<div className="text-center text-sm">
+				<span className="text-warning">*</span>for contact details, read{" "}
+				<Link href="/profile" className="text-accent hover:underline">
+					/profile
+				</Link>
 			</div>
 		</div>
 	);

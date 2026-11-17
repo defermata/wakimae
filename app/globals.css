@@ -4,6 +4,7 @@
 	--background: #f7f4ea;
 	--foreground: #555555;
 	--accent: #b56576;
+	--warning: #c0392b;
 	color-scheme: light;
 }
 
@@ -11,6 +12,7 @@
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--color-accent: var(--accent);
+	--color-warning: var(--warning);
 }
 
 body {
