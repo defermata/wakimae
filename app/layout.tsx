@@ -12,7 +12,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 		<html lang="en" className="h-full antialiased">
 			<body className="min-h-full flex flex-col">
 				<Nav />
-				<main className="flex-1">{children}</main>
+				<main className="mx-auto w-full flex-1 px-4 md:w-3/4">
+					{children}
+				</main>
 			</body>
 		</html>
 	);
