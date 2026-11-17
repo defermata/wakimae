@@ -1,5 +1,3 @@
 export default function Home() {
-  return (
-    <div>Wakimae</div>
-  );
+	return <div>Wakimae</div>;
 }
