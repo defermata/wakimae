@@ -15,6 +15,8 @@ export default function Home() {
 					alt="Kanae"
 					width={1440}
 					height={1011}
+					loading="eager"
+					fetchPriority="high"
 					style={{ width: "95%", height: "auto" }}
 					className="border-2 border-foreground"
 				/>
@@ -22,7 +24,8 @@ export default function Home() {
 
 			<div className="text-center">
 				<h1 className="text-2xl font-semibold">
-					Need Something From Wakimae?
+					Need Something From{" "}
+					<span className="text-accent">Wakimae</span> ?
 				</h1>
 			</div>
 
