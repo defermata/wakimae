@@ -4,7 +4,7 @@ export default function NotFound() {
 			<h1 className="text-2xl font-semibold">
 				<span className="text-accent">Wakimae</span> is lazy,
 				<br />
-				this route doesn't exist
+				this route doesn&apos;t exist
 			</h1>
 		</div>
 	);
