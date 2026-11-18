@@ -5,6 +5,7 @@
 	--foreground: #555555;
 	--accent: #b56576;
 	--warning: #c0392b;
+	--canvas: #f2e9db;
 	color-scheme: light;
 }
 
@@ -13,6 +14,7 @@
 	--color-foreground: var(--foreground);
 	--color-accent: var(--accent);
 	--color-warning: var(--warning);
+	--color-canvas: var(--canvas);
 }
 
 body {
