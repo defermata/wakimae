@@ -66,14 +66,14 @@ export default function Home() {
 				</p>
 				<p className="mt-4">
 					In my spare time, I do a bit of coding, mainly in Rust and
-					C. But don't worry, if you need me to build you a website,
-					or just want to consult on a technical problem you're
-					dealing with in a different programming language, just hit
-					me up.
+					C. But don&apos;t worry, if you need me to build you a
+					website, or just want to consult on a technical problem
+					you&apos;re dealing with in a different programming
+					language, just hit me up.
 				</p>
 				<p className="mt-4">
-					Recently I've taken an interest in CAD, so I do have some 3D
-					models, mostly functional parts. Feel free to visit{" "}
+					Recently I&apos;ve taken an interest in CAD, so I do have
+					some 3D models, mostly functional parts. Feel free to visit{" "}
 					<Link
 						href="/design"
 						className="text-accent hover:underline"
@@ -81,6 +81,19 @@ export default function Home() {
 						/design
 					</Link>
 					{"."}
+				</p>
+			</div>
+
+			<div>
+				<h2 className="text-xl font-semibold">
+					So what&apos;s the limitation?
+				</h2>
+				<p className="mt-2">
+					There are no limitations on requests. Just tell me your
+					problem and I will adjust based on scale and budget. The
+					rule is simple: if the end product will be used to{" "}
+					<span className="text-warning">HURT OTHERS</span>, even the
+					slightest, you can throw that idea into the bin.
 				</p>
 			</div>
 		</div>
