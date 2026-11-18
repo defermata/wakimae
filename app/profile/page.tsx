@@ -1,8 +1,13 @@
 import Image from "next/image";
 
 const profile = [
-	{ key: "name", value: "Wakimae" },
-	{ key: "hobby", value: "Read and write" },
+	{ key: "mail", value: "hanazononote@gmail.com" },
+	{ key: "name", value: "wakimae" },
+	{ key: "hobby", value: "read and write" },
+	{
+		key: "skillset",
+		value: "3d design, cad, pcb design, networking, system design, soldering (electronics), embedded programming (c/c++), web development, devops, photoshop, illustrator",
+	},
 ];
 
 export default function Profile() {

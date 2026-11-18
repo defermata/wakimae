@@ -39,7 +39,7 @@ export default function Home() {
 					<div
 						key={service.slug}
 						style={{ backgroundColor: service.color }}
-						className="rounded-lg px-6 py-4 text-center transition hover:brightness-90"
+						className="border-2 border-foreground px-6 py-4 text-center transition hover:brightness-90"
 					>
 						{service.label}
 					</div>
