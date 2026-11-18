@@ -19,6 +19,15 @@ export function Nav() {
 						{link.label}
 					</Link>
 				))}
+
+				<a
+					href="https://github.com/defermata/wakimae"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-sm text-accent hover:underline"
+				>
+					/source-code
+				</a>
 			</nav>
 		</header>
 	);
