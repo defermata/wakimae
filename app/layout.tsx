@@ -4,7 +4,8 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "wakimae",
+	metadataBase: new URL("https://wakimae.com"),
+	title: { default: "wakimae", template: "%s | wakimae" },
 	description: "",
 };
 

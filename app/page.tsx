@@ -1,8 +1,21 @@
+import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const services = [
-	{ slug: "3d-design", label: "3D Design", color: "#e8d9c0" },
+type Service = {
+	slug: string;
+	label: string;
+	color: string;
+	href?: Route;
+};
+
+const services: Service[] = [
+	{
+		slug: "3d-design",
+		label: "3D Design",
+		color: "#e8d9c0",
+		href: "/design",
+	},
 	{
 		slug: "electrical-electronic",
 		label: "Electrical & Electronic",
@@ -11,16 +24,19 @@ const services = [
 	{ slug: "programming", label: "Programming", color: "#d6dbe8" },
 ];
 
+const serviceBox = "block border-2 border-foreground px-6 py-4 text-center";
+
 export default function Home() {
 	return (
 		<div className="flex flex-col gap-8 py-12">
 			<div className="flex justify-center">
 				<Image
 					src="/kanae.webp"
-					alt="Kanae"
+					alt="Illustration of Kanae"
 					width={1440}
 					height={669}
-					loading="eager"
+					preload
+					sizes="(min-width: 768px) 71vw, 95vw"
 					style={{ width: "95%", height: "auto" }}
 					className="border-2 border-foreground"
 				/>
@@ -34,17 +50,28 @@ export default function Home() {
 				</h1>
 			</div>
 
-			<div className="flex flex-wrap items-center justify-center gap-4">
-				{services.map((service) => (
-					<div
-						key={service.slug}
-						style={{ backgroundColor: service.color }}
-						className="border-2 border-foreground px-6 py-4 text-center transition hover:brightness-90"
-					>
-						{service.label}
-					</div>
+			<ul className="flex flex-wrap items-center justify-center gap-4">
+				{services.map(({ slug, label, color, href }) => (
+					<li key={slug}>
+						{href ? (
+							<Link
+								href={href}
+								style={{ backgroundColor: color }}
+								className={`${serviceBox} transition hover:brightness-90`}
+							>
+								{label}
+							</Link>
+						) : (
+							<div
+								style={{ backgroundColor: color }}
+								className={serviceBox}
+							>
+								{label}
+							</div>
+						)}
+					</li>
 				))}
-			</div>
+			</ul>
 
 			<div className="text-center text-sm">
 				<span className="text-warning">*</span>for contact details, see{" "}

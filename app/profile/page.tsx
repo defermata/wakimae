@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
-const profile = [
-	{ key: "mail", value: "hanazononote@gmail.com" },
+export const metadata: Metadata = {
+	title: "Profile",
+};
+
+const email = "hanazononote@gmail.com";
+
+const profile: { key: string; value: string; href?: string }[] = [
+	{ key: "mail", value: email, href: `mailto:${email}` },
 	{ key: "name", value: "wakimae" },
 	{ key: "hobby", value: "read and write" },
 	{
@@ -13,30 +20,44 @@ const profile = [
 export default function Profile() {
 	return (
 		<div className="py-12">
+			<h1 className="mb-6 text-2xl font-semibold">Profile</h1>
+
 			<div className="flex gap-8">
 				<div className="flex-1">
-					<div className="flex flex-col gap-2">
+					<dl className="flex flex-col gap-2">
 						{profile.map((item) => (
 							<div
 								key={item.key}
 								className="flex gap-4 border-2 border-foreground bg-canvas px-3 py-2"
 							>
-								<div className="w-20 shrink-0 font-semibold">
+								<dt className="w-20 shrink-0 font-semibold">
 									{item.key}
-								</div>
-								<div className="flex-1">{item.value}</div>
+								</dt>
+								<dd className="flex-1">
+									{item.href ? (
+										<a
+											href={item.href}
+											className="text-accent hover:underline"
+										>
+											{item.value}
+										</a>
+									) : (
+										item.value
+									)}
+								</dd>
 							</div>
 						))}
-					</div>
+					</dl>
 				</div>
 
 				<div className="w-1/4 md:w-1/3">
 					<div className="h-48 overflow-hidden border-2 border-foreground md:h-72">
 						<Image
 							src="/reimu.webp"
-							alt="Reimu"
+							alt="Illustration of Reimu"
 							width={962}
 							height={1196}
+							sizes="25vw"
 							className="h-full w-full object-cover"
 						/>
 					</div>
