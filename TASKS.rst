@@ -1,0 +1,3 @@
+- [x] wrote intial on /design page
+- [ ] wrote first /3d-stl page
+- [ ] wrote about lacia on /software-concept
