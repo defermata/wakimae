@@ -1,27 +1,15 @@
-import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 type Service = {
-	slug: string;
 	label: string;
 	color: string;
-	href?: Route;
 };
 
 const services: Service[] = [
-	{
-		slug: "3d-design",
-		label: "3D Design",
-		color: "#e8d9c0",
-		href: "/design",
-	},
-	{
-		slug: "electrical-electronic",
-		label: "Electrical & Electronic",
-		color: "#d9e2c8",
-	},
-	{ slug: "programming", label: "Programming", color: "#d6dbe8" },
+	{ label: "3D Design", color: "#e8d9c0" },
+	{ label: "Electrical & Electronic", color: "#d9e2c8" },
+	{ label: "Programming", color: "#d6dbe8" },
 ];
 
 const serviceBox = "block border-2 border-foreground px-6 py-4 text-center";
@@ -51,24 +39,14 @@ export default function Home() {
 			</div>
 
 			<ul className="flex flex-wrap items-center justify-center gap-4">
-				{services.map(({ slug, label, color, href }) => (
-					<li key={slug}>
-						{href ? (
-							<Link
-								href={href}
-								style={{ backgroundColor: color }}
-								className={`${serviceBox} transition hover:brightness-90`}
-							>
-								{label}
-							</Link>
-						) : (
-							<div
-								style={{ backgroundColor: color }}
-								className={serviceBox}
-							>
-								{label}
-							</div>
-						)}
+				{services.map(({ label, color }) => (
+					<li key={label}>
+						<div
+							style={{ backgroundColor: color }}
+							className={`${serviceBox} transition hover:brightness-90`}
+						>
+							{label}
+						</div>
 					</li>
 				))}
 			</ul>
