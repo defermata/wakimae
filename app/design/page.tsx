@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 
 const categories = [
 	{
-		href: "/3d-stl",
+		href: "/design/3d-stl",
 		label: "/3d-stl",
 		description: "Printable 3D models for functional parts.",
 	},
 	{
-		href: "/software-concept",
+		href: "/design/software-concept",
 		label: "/software-concept",
 		description: "Ideas and prototypes for software I want to build.",
 	},
