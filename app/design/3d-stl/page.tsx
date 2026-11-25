@@ -10,7 +10,8 @@ const projects = [
 		href: "/design/3d-stl/flip4",
 		label: "/flip4",
 		date: "25 November 2026",
-		description: "Printable 3D model mounting for Galaxy Z Flip4.",
+		description:
+			"Printable 3D model mounting for compact headless Samsung Galaxy Z Flip4.",
 	},
 ] as const;
 
