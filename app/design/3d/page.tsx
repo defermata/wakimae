@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const projects = [
 	{
-		href: "/design/3d-stl/flip4",
+		href: "/design/3d/flip4",
 		label: "/flip4",
 		date: "25 November 2026",
 		description:
@@ -15,7 +15,7 @@ const projects = [
 	},
 ] as const;
 
-export default function ThreeDStl() {
+export default function ThreeD() {
 	return (
 		<div className="flex flex-col gap-8 py-12">
 			<div>

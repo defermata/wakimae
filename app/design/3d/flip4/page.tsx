@@ -11,10 +11,10 @@ export default function Flip4Page() {
 			<header className="flex flex-col gap-3 border-b-2 border-foreground pb-4">
 				<div className="flex items-baseline justify-between gap-4">
 					<Link
-						href={"/design/3d-stl" as Route}
+						href={"/design/3d" as Route}
 						className="text-sm font-semibold text-accent hover:underline"
 					>
-						&larr; /3d-stl
+						&larr; /3d
 					</Link>
 					<time className="text-xs text-foreground">
 						25 November 2026
