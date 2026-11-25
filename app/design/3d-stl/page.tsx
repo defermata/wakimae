@@ -9,7 +9,9 @@ const projects = [
 	{
 		href: "/design/3d-stl/flip4",
 		label: "/flip4",
-		description: "Printable 3D model for Galaxy Z Flip4.",
+		date: "25 November 2026",
+		description:
+			"Printable 3D model mounting for compact headless Samsung Galaxy Z Flip4.",
 	},
 ] as const;
 
@@ -32,14 +34,19 @@ export default function ThreeDStl() {
 				{projects.map((project) => (
 					<div
 						key={project.href}
-						className="col-span-2 grid grid-cols-subgrid border-2 border-foreground bg-canvas px-3 py-2"
+						className="col-span-2 grid grid-cols-subgrid items-center border-2 border-foreground bg-canvas px-3 py-2"
 					>
-						<Link
-							href={project.href as Route}
-							className="font-semibold text-accent hover:underline"
-						>
-							{project.label}
-						</Link>
+						<div className="flex flex-col gap-1">
+							<Link
+								href={project.href as Route}
+								className="font-semibold text-accent hover:underline"
+							>
+								{project.label}
+							</Link>
+							<p className="text-xs text-foreground">
+								{project.date}
+							</p>
+						</div>
 						<div>{project.description}</div>
 					</div>
 				))}

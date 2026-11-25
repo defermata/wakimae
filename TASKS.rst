@@ -1,4 +1,4 @@
 - [x] 22.11.26 | wrote intial on /design page
 - [x] 22.11.26 | wrote first /3d-stl page
 - [ ] 22.11.26 | wrote about lacia on /software-concept
-- [ ] 23.11.26 | deciding the writing page style for flip4
+- [x] 23.11.26 | deciding the writing page style for flip4
