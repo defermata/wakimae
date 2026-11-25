@@ -21,7 +21,7 @@ export default function Flip4Page() {
 					</time>
 				</div>
 				<h1 className="text-2xl font-semibold">
-					Galaxy Z Flip4 Mounting Bracket
+					Galaxy Z Flip4 Headless Mod
 				</h1>
 			</header>
 
@@ -30,22 +30,26 @@ export default function Flip4Page() {
 					Overview
 				</h2>
 				<p>
-					lorem ipsum dolor sit amet consectetur adipiscing elit
-					tempore placeat dolore libero dolore praesentium officia aut
-					qui incididunt animi soluta similique est fuga et
-					praesentium animi vel officia in elit eligendi laborum
-					nostrud consequatur vel nulla id dolor quibusdam quo
-					occaecat ea eiusmod adipiscing iusto et sunt elit odio
-					tempore
+					I have a weird interest in foldable phones, like the Samsung
+					Z Flip lineup. I’ve realized that most of the cost that
+					determines their worth on the second-hand market comes
+					solely from the main screen (which is also the part that
+					breaks most often). They also have a smaller secondary
+					screen, but it is not as useful as the main screen, since
+					some activities actually require you to use the main screen
+					instead. That’s why it’s not uncommon to see someone listing
+					one with a broken screen for cheap.
 				</p>
 				<p>
-					lorem ipsum dolor sit amet consectetur adipiscing elit
-					tempore placeat dolore libero dolore praesentium officia aut
-					qui incididunt animi soluta similique est fuga et
-					praesentium animi vel officia in elit eligendi laborum
-					nostrud consequatur vel nulla id dolor quibusdam quo
-					occaecat ea eiusmod adipiscing iusto et sunt elit odio
-					tempore
+					I owned a Samsung Galaxy Z Flip4 that I bought second-hand
+					back in 2025. I kept it unfolded and had a special case just
+					for storing it. It originally had one pink line, and the
+					screen crease wasn’t too bad. I rarely turned this phone on;
+					I even kept it powered off for almost two years. And I kid
+					you not, later when I turned it back on, a new green line
+					had appeared to the right of the pink line. I know Samsung
+					is famous for its “lightsaber,” but I don’t even use the
+					device at all, and the lines keep increasing.
 				</p>
 			</section>
 
@@ -60,9 +64,9 @@ export default function Flip4Page() {
 							download
 							className="font-semibold text-accent hover:underline"
 						>
-							flip4-bracket.stl
+							flip4.stl
 						</a>{" "}
-						— lorem ipsum dolor sit amet consectetur adipiscing elit
+						- lorem ipsum dolor sit amet consectetur adipiscing elit
 						duis eu
 					</li>
 				</ul>
