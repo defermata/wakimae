@@ -43,14 +43,44 @@ export default function Flip4Page() {
 				<p>
 					I owned a Samsung Galaxy Z Flip4 that I bought second-hand
 					back in 2025. I kept it unfolded and had a special case just
-					for storing it. It originally had one pink line, and the
+					for storing it. It originally had one green line, and the
 					screen crease wasn’t too bad. I rarely turned this phone on;
 					I even kept it powered off for almost two years. And I kid
-					you not, later when I turned it back on, a new green line
-					had appeared to the right of the pink line. I know Samsung
-					is famous for its “lightsaber,” but I don’t even use the
-					device at all, and the lines keep increasing.
+					you not, later when I turned it back on, a new pink line had
+					appeared to the right of the green line. I know Samsung is
+					famous for its “lightsaber,” but I don’t even use the device
+					at all, and the lines keep increasing. (update now it had 2
+					pink lines)
 				</p>
+			</section>
+
+			<section className="flex flex-col gap-3">
+				<h2 className="border-b-2 border-foreground pb-1 text-lg font-semibold">
+					Hardware
+				</h2>
+
+				<p>
+					For as low as 40 USD (in my area with a broken screen) I got
+					this kinda spec, which is wild.
+				</p>
+
+				<ul className="list-inside list-disc space-y-1">
+					<li>
+						<span className="font-semibold">CPU :</span> Qualcomm
+						Snapdragon 8+ Gen 1 (4 nm)
+					</li>
+					<li>
+						<span className="font-semibold">RAM :</span> 8 GB
+					</li>
+					<li>
+						<span className="font-semibold">ROM :</span> 256 GB (no
+						microSD)
+					</li>
+					<li>
+						<span className="font-semibold">OS :</span> OneUI 7,
+						Android 15
+					</li>
+				</ul>
 			</section>
 
 			<section className="flex flex-col gap-3">
@@ -65,9 +95,7 @@ export default function Flip4Page() {
 							className="font-semibold text-accent hover:underline"
 						>
 							flip4.stl
-						</a>{" "}
-						- lorem ipsum dolor sit amet consectetur adipiscing elit
-						duis eu
+						</a>
 					</li>
 				</ul>
 			</section>
